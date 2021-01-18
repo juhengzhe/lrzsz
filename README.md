@@ -13,8 +13,10 @@ sudo wget https://raw.github.com/juhengzhe/lrzsz/master/iterm2-send-zmodem.sh
 sudo wget https://raw.github.com/juhengzhe/lrzszmaster/iterm2-recv-zmodem.sh
 sudo chmod 777 /usr/local/bin/iterm2-*
 </code>
+
 # 5.配置iterm2
 preferences → profiles，选择某个profile，如Default，之后选择advanced → triggers，添加编辑添加如下triggers
+<code>
 triggers1：
 Regular expression: /*/*B0100
 Action: Run Silent Coprocess
@@ -24,4 +26,5 @@ triggers2：
 Regular expression: /*/*B00000000000000
 Action: Run Silent Coprocess
 Parameters:/usr/local/bin/iterm2-recv-zmodem.sh
+</code>
 
